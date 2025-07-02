@@ -36,3 +36,15 @@ function checkNumbers() {
     
     document.getElementById("result5").innerHTML = result;
 }
+const colors = ["red", "blue", "green", "yellow", "purple"];
+let currentColorIndex = -1;
+
+function changeBackgroundColor() {
+    currentColorIndex++;
+    
+    if (currentColorIndex >= colors.length) {
+        currentColorIndex = 0;
+    }
+    
+    document.body.style.backgroundColor = colors[currentColorIndex];
+}
